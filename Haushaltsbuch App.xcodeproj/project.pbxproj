@@ -11,7 +11,6 @@
 		724494BB27EDAA9B00266C42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724494BA27EDAA9B00266C42 /* ContentView.swift */; };
 		724494BD27EDAA9C00266C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724494BC27EDAA9C00266C42 /* Assets.xcassets */; };
 		724494C027EDAA9C00266C42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724494BF27EDAA9C00266C42 /* Preview Assets.xcassets */; };
-		729A651927EF111F00EA9C2B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A651827EF111F00EA9C2B /* HomeView.swift */; };
 		729A651B27EF16D800EA9C2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A651A27EF16D800EA9C2B /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +21,6 @@
 		724494BC27EDAA9C00266C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724494BF27EDAA9C00266C42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		724494C927EDACAF00266C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		729A651827EF111F00EA9C2B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		729A651A27EF16D800EA9C2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				724494BA27EDAA9B00266C42 /* ContentView.swift */,
-				729A651827EF111F00EA9C2B /* HomeView.swift */,
 				729A651A27EF16D800EA9C2B /* CustomTabView.swift */,
 			);
 			path = ViewModel;
@@ -169,7 +166,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729A651927EF111F00EA9C2B /* HomeView.swift in Sources */,
 				724494BB27EDAA9B00266C42 /* ContentView.swift in Sources */,
 				724494B927EDAA9B00266C42 /* Haushaltsbuch_App.swift in Sources */,
 				729A651B27EF16D800EA9C2B /* CustomTabView.swift in Sources */,
