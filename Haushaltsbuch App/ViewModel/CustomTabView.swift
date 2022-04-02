@@ -10,56 +10,31 @@ import SwiftUI
 struct CustomTabView: View {
     
     var body: some View {
-        NavigationView {
-            TabView() {
-                ZStack {
-                    
-                    Color("background")
-                    
-                    VStack (spacing: 20) {
-                        
-                        Image(systemName: "tray.fill")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50)
-                        
-                        Text("Keine Einträge")
-                            .font(.largeTitle)
-                        
-                    }
-                    
-                }
+        TabView() {
+            HomeView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                 }
-                
-                Text("Diagramm")
-                    .tabItem {
-                        Image(systemName: "circle")
-                        Text("Diagramm")
-                    }
-                Text("Eintrag hinzufügen")
-                    .tabItem {
-                        Image(systemName: "plus")
-                    }
-                Text("Kategorien")
-                    .tabItem {
-                        Image(systemName: "square.grid.2x2")
-                        Text("Kategorien")
-                    }
-                Text("Konto hinzufügen")
-                    .tabItem {
-                        Image(systemName: "person")
-                        Text("Profil")
-                    }
-                
-                
-                
-            }
-            .navigationTitle("Haushaltsbuch App")
-            .navigationBarTitleDisplayMode(.inline)
-
+            DiagramView()
+                .tabItem {
+                    Image(systemName: "circle")
+                    Text("Diagramm")
+                }
+            EntryView()
+                .tabItem {
+                    Image(systemName: "plus")
+                }
+            CategoryView()
+                .tabItem {
+                    Image(systemName: "square.grid.2x2")
+                    Text("Kategorien")
+                }
+            ProfilView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profil")
+                }
         }
     }
     
