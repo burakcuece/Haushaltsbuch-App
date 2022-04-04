@@ -28,7 +28,7 @@ struct ProfilView: View {
                     Text("Profil hinzufügen")
                         .font(.largeTitle)
                 }
-                .navigationBarTitle(Text("Profil"), displayMode: .inline)
+                .navigationBarTitle(Text("Profil"))
 
             }
         }

@@ -25,7 +25,7 @@ struct DiagramView: View {
                     Text("Keine Daten")
                         .font(.largeTitle)
                 }
-                .navigationBarTitle(Text("Diagramm"), displayMode: .inline)
+                .navigationBarTitle(Text("Diagramm"))
             }
         }
     }

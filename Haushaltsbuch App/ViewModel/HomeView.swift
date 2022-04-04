@@ -28,7 +28,7 @@ struct HomeView: View {
                         .font(.largeTitle)
                     
                 }
-                .navigationBarTitle(Text("Home"), displayMode: .inline)
+                .navigationBarTitle(Text("Home"))
                 .navigationBarItems(trailing: Button(
                     action: {
                         
