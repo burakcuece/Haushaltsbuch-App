@@ -10,15 +10,23 @@ import SwiftUI
 struct DiagramView: View {
     var body: some View {
         NavigationView {
+            
             ZStack {
                 
                 Color("background")
-
                 
-                Text("Diagramm")
+                VStack (spacing: 20) {
+                    
+                    Image(systemName: "circle.circle")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50, height: 50)
+                    
+                    Text("Keine Daten")
+                        .font(.largeTitle)
+                }
+                .navigationBarTitle(Text("Diagramm"), displayMode: .inline)
             }
-            .navigationTitle("Diagramm")
-            
         }
     }
 }

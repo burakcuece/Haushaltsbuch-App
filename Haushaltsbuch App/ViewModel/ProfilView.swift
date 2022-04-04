@@ -18,10 +18,19 @@ struct ProfilView: View {
                 
                 Color("background")
                 
-                Text("Profil hinzufügen")
+                VStack (spacing: 20) {
+                    
+                    Image(systemName: "person")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50, height: 50)
+                    
+                    Text("Profil hinzufügen")
+                        .font(.largeTitle)
+                }
+                .navigationBarTitle(Text("Profil"), displayMode: .inline)
+
             }
-            .navigationTitle("Profil")
-            
         }
     }
 }

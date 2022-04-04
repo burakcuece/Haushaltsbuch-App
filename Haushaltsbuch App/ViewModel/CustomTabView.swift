@@ -11,11 +11,14 @@ struct CustomTabView: View {
     
     var body: some View {
         TabView() {
+            
             HomeView()
                 .tabItem {
+                    
                     Image(systemName: "house")
                     Text("Home")
                 }
+            
             DiagramView()
                 .tabItem {
                     Image(systemName: "circle")

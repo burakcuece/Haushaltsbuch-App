@@ -18,7 +18,7 @@ struct HomeView: View {
                 
                 VStack (spacing: 20) {
                     
-                    Image(systemName: "tray.fill")
+                    Image(systemName: "tray")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50)
@@ -28,7 +28,16 @@ struct HomeView: View {
                         .font(.largeTitle)
                     
                 }
-                .navigationTitle("Home")
+                .navigationBarTitle(Text("Home"), displayMode: .inline)
+                .navigationBarItems(trailing: Button(
+                    action: {
+                        
+                        print("Edit")
+                        
+                    }, label: {
+                        
+                        Image(systemName: "plus")
+                    }))
                 
                 
             }
