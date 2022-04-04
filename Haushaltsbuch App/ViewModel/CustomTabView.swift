@@ -21,15 +21,7 @@ struct CustomTabView: View {
                     Image(systemName: "circle")
                     Text("Diagramm")
                 }
-            EntryView()
-                .tabItem {
-                    Image(systemName: "plus")
-                }
-            CategoryView()
-                .tabItem {
-                    Image(systemName: "square.grid.2x2")
-                    Text("Kategorien")
-                }
+            
             ProfilView()
                 .tabItem {
                     Image(systemName: "person")
