@@ -15,6 +15,9 @@
 		724F0D3E27F434470027D6B8 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F0D3D27F434470027D6B8 /* DiagramView.swift */; };
 		724F0D4427F435CE0027D6B8 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F0D4327F435CE0027D6B8 /* ProfilView.swift */; };
 		729A651B27EF16D800EA9C2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A651A27EF16D800EA9C2B /* CustomTabView.swift */; };
+		72C862CC27FDA74000D02B96 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C862CB27FDA74000D02B96 /* ListView.swift */; };
+		72C862CE27FDA81F00D02B96 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C862CD27FDA81F00D02B96 /* FormView.swift */; };
+		72C862D027FDAFA200D02B96 /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C862CF27FDAFA200D02B96 /* NumbersOnly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		724F0D3D27F434470027D6B8 /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
 		724F0D4327F435CE0027D6B8 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		729A651A27EF16D800EA9C2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		72C862CB27FDA74000D02B96 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		72C862CD27FDA81F00D02B96 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		72C862CF27FDAFA200D02B96 /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		724494C727EDAB7C00266C42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72C862CF27FDAFA200D02B96 /* NumbersOnly.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +108,8 @@
 				724F0D3B27F433A40027D6B8 /* HomeView.swift */,
 				724F0D3D27F434470027D6B8 /* DiagramView.swift */,
 				724F0D4327F435CE0027D6B8 /* ProfilView.swift */,
+				72C862CB27FDA74000D02B96 /* ListView.swift */,
+				72C862CD27FDA81F00D02B96 /* FormView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,9 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C862CE27FDA81F00D02B96 /* FormView.swift in Sources */,
+				72C862D027FDAFA200D02B96 /* NumbersOnly.swift in Sources */,
 				724494BB27EDAA9B00266C42 /* ContentView.swift in Sources */,
 				724F0D4427F435CE0027D6B8 /* ProfilView.swift in Sources */,
 				724F0D3C27F433A40027D6B8 /* HomeView.swift in Sources */,
+				72C862CC27FDA74000D02B96 /* ListView.swift in Sources */,
 				724F0D3E27F434470027D6B8 /* DiagramView.swift in Sources */,
 				724494B927EDAA9B00266C42 /* Haushaltsbuch_App.swift in Sources */,
 				729A651B27EF16D800EA9C2B /* CustomTabView.swift in Sources */,
