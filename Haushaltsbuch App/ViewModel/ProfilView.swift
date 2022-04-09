@@ -29,6 +29,7 @@ struct ProfilView: View {
                         .font(.largeTitle)
                 }
                 .navigationBarTitle(Text("Profil"))
+                .navigationBarTitleDisplayMode(.automatic)
 
             }
         }

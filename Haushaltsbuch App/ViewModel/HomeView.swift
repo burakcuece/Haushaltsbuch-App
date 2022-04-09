@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var navigated = false
+    
+    
     var body: some View {
         
         NavigationView {
@@ -29,18 +33,15 @@ struct HomeView: View {
                     
                 }
                 .navigationBarTitle(Text("Home"))
-                .navigationBarItems(trailing: Button(
-                    action: {
-                        
-                        print("Edit")
-                        
-                    }, label: {
-                        
-                        Image(systemName: "plus")
-                    }))
+                .navigationBarItems(trailing: NavigationLink(destination: {
+                    FormView()
+                }, label: {
+                    Image(systemName: "plus")
+                }))
                 
                 
             }
+            .navigationBarTitleDisplayMode(.automatic)
         }
         
     }

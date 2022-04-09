@@ -17,7 +17,7 @@ struct DiagramView: View {
                 
                 VStack (spacing: 20) {
                     
-                    Image(systemName: "circle.circle")
+                    Image(systemName: "circle")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50)
@@ -26,6 +26,7 @@ struct DiagramView: View {
                         .font(.largeTitle)
                 }
                 .navigationBarTitle(Text("Diagramm"))
+                .navigationBarTitleDisplayMode(.automatic)
             }
         }
     }
