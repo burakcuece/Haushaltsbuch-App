@@ -46,9 +46,9 @@ struct FormView: View {
                     content: {
                         Text("Eingabe").tag("1")
                         Text("Ausgabe").tag("2")
-                })
+                    })
             }
-        
+            
             
             Section {
                 TextField("Notiz", text: $notiz)
