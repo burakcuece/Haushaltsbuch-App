@@ -21,7 +21,7 @@ struct CustomTabView: View {
             
             DiagramView()
                 .tabItem {
-                    Image(systemName: "circle")
+                    Image(systemName: "chart.pie.fill")
                     Text("Diagramm")
                 }
             

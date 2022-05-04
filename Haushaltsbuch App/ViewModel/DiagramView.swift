@@ -17,7 +17,7 @@ struct DiagramView: View {
                 
                 VStack (spacing: 20) {
                     
-                    Image(systemName: "circle")
+                    Image(systemName: "chart.pie")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50)
