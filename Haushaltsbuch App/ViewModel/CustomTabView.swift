@@ -14,14 +14,13 @@ struct CustomTabView: View {
             
             HomeView()
                 .tabItem {
-                    
                     Image(systemName: "house")
                     Text("Home")
                 }
-            
+          
             DiagramView()
                 .tabItem {
-                    Image(systemName: "chart.pie.fill")
+                    Image(systemName: "chart.pie")
                     Text("Diagramm")
                 }
             
@@ -39,5 +38,8 @@ struct CustomTabView: View {
 struct CustomTabView_Previews: PreviewProvider {
     static var previews: some View {
         CustomTabView()
+            .environment(\.locale, Locale(identifier: "ger"))
+
+        
     }
 }

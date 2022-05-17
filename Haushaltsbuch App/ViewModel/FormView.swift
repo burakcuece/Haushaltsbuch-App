@@ -2,7 +2,7 @@
 //  FormView.swift
 //  Haushaltsbuch App
 //
-//  Created by Burak Cüce on 06.04.22.
+//  Created by Burak Cüce on 17.05.22.
 //
 
 import SwiftUI
@@ -15,61 +15,76 @@ struct FormView: View {
     @State private var selectedInOutPut = "Eingabe"
     @State private var notiz = ""
     
-    var inoutput = ["Eingabe", "Ausgabe"]
-    
+    @Binding var showHomeView: Bool
     
     var body: some View {
+       
         
-        Form {
+        NavigationView {
             
-            Section {
+            Form(content: {
                 
-                TextField("Titel", text: $titel)
+                Section {
+                    
+                    TextField("Titel", text: $titel)
+                    
+                }
                 
-            }
-            
-            Section {
+                Section {
+                    
+                    TextField("Betrag", text: $betrag.value)
+                    
+                }
                 
-                TextField("Betrag", text: $betrag.value)
-                    .keyboardType(.numberPad)
+                Section {
+                    
+                    TextField("Kategorie", text: $kategorie)
+                    
+                }
                 
-            }
-            
-            Section {
-                TextField("Kategorie", text: $kategorie)
-            }
-            
-            Section {
-                Picker(
-                    selection: $selectedInOutPut,
-                    label: Text("Bitte auswählen"),
-                    content: {
+                Section {
+                    Picker(selection: $selectedInOutPut, label: Text("Bitte auswählen"),
+                           
+                           content: {
                         Text("Eingabe").tag("1")
                         Text("Ausgabe").tag("2")
                     })
-            }
-            
-            
-            Section {
-                TextField("Notiz", text: $notiz)
-                    .frame(height: 150, alignment: .topTrailing)
-            }
-            
-            Button(action: {
+                }
                 
-            }) {
+                Section {
+                    
+                    TextField("Notiz", text: $notiz)
+                        .frame(height: 150, alignment: .top)
+                }
                 
-                Text("Hinzufügen")
+                Section {
+                    Button {
+                        print("Hinzufügen")
+                    } label: {
+                        Text("Hinzufügen")
+                    }
+                }
                 
+            })
+            .navigationBarTitle("Hinzufügen")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button(action: {
                 
-            }
-            
+                print("Dissmissing home view")
+                
+                self.showHomeView = false }) {
+                    
+                    Text("Abbrechen")
+                        .bold()
+                    
+            })
         }
     }
 }
+
+
 struct FormView_Previews: PreviewProvider {
     static var previews: some View {
-        FormView()
+        FormView(showHomeView: .constant(false))
     }
 }
-

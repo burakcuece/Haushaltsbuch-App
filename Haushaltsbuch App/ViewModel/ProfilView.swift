@@ -2,37 +2,60 @@
 //  ProfilView.swift
 //  Haushaltsbuch App
 //
-//  Created by Burak Cüce on 30.03.22.
+//  Created by Burak Cüce on 14.05.22.
 //
 
 import SwiftUI
 
 struct ProfilView: View {
     
+    @State var username:String = ""
+    @State var password:String = ""
+
+    
     var body: some View {
         
-        NavigationView {
+        VStack {
+            Image(systemName: "person.crop.circle")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .foregroundColor(.blue)
             
             
-            ZStack {
-                
-                Color("background")
-                
-                VStack (spacing: 20) {
-                    
-                    Image(systemName: "person")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 50, height: 50)
-                    
-                    Text("Profil hinzufügen")
-                        .font(.largeTitle)
-                }
-                .navigationBarTitle(Text("Profil"))
-                .navigationBarTitleDisplayMode(.automatic)
-
+            Text("Registrieren")
+                .bold()
+                .font(.title)
+                .padding()
+            
+           
+            
+            TextField("Benutzername", text: $username)
+                .padding()
+                .background(Color(.systemGray6))
+                .cornerRadius(5.0)
+            
+            SecureField("Passwort", text: $password)
+                .padding()
+                .background(Color(.systemGray6))
+                .cornerRadius(5.0)
+            
+            
+            Button {
+                print("Konto hinzufügen")
+            } label: {
+                Spacer()
+                Text("Konto hinzufügen")
+                    .foregroundColor(.white)
+                Spacer()
             }
-        }
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(5.0)
+
+            Spacer()
+            
+        }.padding()
+        
     }
 }
 
