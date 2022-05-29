@@ -74,8 +74,9 @@ struct FormView: View {
                 
                 self.showHomeView = false }) {
                     
-                    Text("Abbrechen")
-                        .bold()
+                  Image(systemName: "x.circle")
+                        .resizable()
+                        .frame(width: 30, height: 30)
                     
             })
         }
