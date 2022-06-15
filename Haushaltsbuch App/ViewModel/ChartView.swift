@@ -1,15 +1,16 @@
 //
-//  DiagramView.swift
+//  ChartView.swift
 //  Haushaltsbuch App
 //
 //  Created by Burak Cüce on 12.05.22.
 //
 
 import SwiftUI
+import Charts
 
 //MARK:- Donut Graph
 
-struct DiagramView : View {
+struct ChartView : View {
     
     @ObservedObject var charDataObj = ChartDataContainer()
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7215B0B1282FE038004D4BE8 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B0B0282FE038004D4BE8 /* ProfilView.swift */; };
+		7232077B2859C7B200A853F8 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 7232077A2859C7B200A853F8 /* Charts */; };
 		724494B927EDAA9B00266C42 /* Haushaltsbuch_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724494B827EDAA9B00266C42 /* Haushaltsbuch_App.swift */; };
 		724494BB27EDAA9B00266C42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724494BA27EDAA9B00266C42 /* ContentView.swift */; };
 		724494BD27EDAA9C00266C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724494BC27EDAA9C00266C42 /* Assets.xcassets */; };
@@ -22,7 +23,7 @@
 		726BF5CE28268D4B006B7472 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726BF5CD28268D4B006B7472 /* DateFormatter+Extensions.swift */; };
 		726BF5D028269020006B7472 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726BF5CF28269020006B7472 /* PreviewData.swift */; };
 		726BF5D2282694A9006B7472 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726BF5D1282694A9006B7472 /* Color+Extensions.swift */; };
-		728EC6A1282D13E600327F52 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EC6A0282D13E600327F52 /* DiagramView.swift */; };
+		728EC6A1282D13E600327F52 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EC6A0282D13E600327F52 /* ChartView.swift */; };
 		729A651B27EF16D800EA9C2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A651A27EF16D800EA9C2B /* CustomTabView.swift */; };
 		72C862CC27FDA74000D02B96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C862CB27FDA74000D02B96 /* HomeView.swift */; };
 		72C862D027FDAFA200D02B96 /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C862CF27FDAFA200D02B96 /* NumbersOnly.swift */; };
@@ -47,7 +48,7 @@
 		726BF5CD28268D4B006B7472 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		726BF5CF28269020006B7472 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		726BF5D1282694A9006B7472 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
-		728EC6A0282D13E600327F52 /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
+		728EC6A0282D13E600327F52 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		729A651A27EF16D800EA9C2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		72C862CB27FDA74000D02B96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72C862CF27FDAFA200D02B96 /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7232077B2859C7B200A853F8 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +135,7 @@
 				726BF5C428267C35006B7472 /* ListView.swift */,
 				726BF5C8282685F4006B7472 /* CurrentBalanceView.swift */,
 				726BF5C628267D83006B7472 /* DateView.swift */,
-				728EC6A0282D13E600327F52 /* DiagramView.swift */,
+				728EC6A0282D13E600327F52 /* ChartView.swift */,
 				7215B0B0282FE038004D4BE8 /* ProfilView.swift */,
 				72E3E15928339F6D003F84CA /* FormView.swift */,
 			);
@@ -165,6 +167,9 @@
 			dependencies = (
 			);
 			name = "Haushaltsbuch App";
+			packageProductDependencies = (
+				7232077A2859C7B200A853F8 /* Charts */,
+			);
 			productName = "Haushaltsbuch App";
 			productReference = 724494B527EDAA9B00266C42 /* Haushaltsbuch App.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 724494AC27EDAA9B00266C42;
+			packageReferences = (
+				723207792859C7B200A853F8 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 724494B627EDAA9B00266C42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,7 +231,7 @@
 				726BF5CE28268D4B006B7472 /* DateFormatter+Extensions.swift in Sources */,
 				72C862D027FDAFA200D02B96 /* NumbersOnly.swift in Sources */,
 				724494BB27EDAA9B00266C42 /* ContentView.swift in Sources */,
-				728EC6A1282D13E600327F52 /* DiagramView.swift in Sources */,
+				728EC6A1282D13E600327F52 /* ChartView.swift in Sources */,
 				726BF5D028269020006B7472 /* PreviewData.swift in Sources */,
 				72E3E15A28339F6D003F84CA /* FormView.swift in Sources */,
 				724F0D4427F435CE0027D6B8 /* ProfilViewEmpty.swift in Sources */,
@@ -439,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		723207792859C7B200A853F8 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7232077A2859C7B200A853F8 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 723207792859C7B200A853F8 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 724494AD27EDAA9B00266C42 /* Project object */;
 }

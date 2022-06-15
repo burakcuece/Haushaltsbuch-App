@@ -18,7 +18,7 @@ struct CustomTabView: View {
                     Text("Home")
                 }
           
-            DiagramView()
+            ChartView()
                 .tabItem {
                     Image(systemName: "chart.pie")
                     Text("Diagramm")

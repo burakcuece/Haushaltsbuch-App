@@ -76,7 +76,8 @@ struct FormView: View {
                     
                   Image(systemName: "x.circle")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.black)
                     
             })
         }
