@@ -11,7 +11,6 @@ import SwiftPieChart
 struct ChartsView: View {
     var body: some View {
         
-        
         VStack {
             Spacer()
                 .frame(height: 150.0)
