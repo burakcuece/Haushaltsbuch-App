@@ -13,7 +13,6 @@ struct HomeView: View {
     
     var body: some View {
         
-        
         NavigationView {
             
             VStack {
@@ -25,7 +24,6 @@ struct HomeView: View {
                 
                 ListView(transaction: transactionPreviewData)
                 
-                    .navigationBarTitle(Text("Home"))
                     .navigationBarItems(trailing: Button(action: {
                         self.showHomeView.toggle()
                     }, label: {
